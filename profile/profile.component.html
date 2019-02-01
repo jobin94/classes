@@ -1,0 +1,10 @@
+<h3>Name:</h3>{{user.name}}
+<h3>Job:</h3>{{user.job}}
+<h3>Address:</h3>{{user.address}}
+<div *ngIf = "user.phone.length > 0">
+  <h3>Phone:</h3><!--{{user.phone}} -->
+<p *ngFor = "let phno of user.phone">{{phno}}</p>
+</div>
+<input (click) = "togglecheck()" type="button" value="Expand/Collapse">
+<div *ngIf = "!check" >gliksdhfihjsdfkjdshfkjshd</div>
+ 
